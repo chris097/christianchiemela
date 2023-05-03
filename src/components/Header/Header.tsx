@@ -16,7 +16,7 @@ const lists: ListProps[] = [
 
 const Header = () => {
     return (
-        <div className='border-b border-gray-800/50 text-gray-100/90 bg-black w-full fixed top-0 left-0 z-50'>
+        <div className='border-b border-gray-700/70 text-gray-100/90 bg-black w-full fixed top-0 left-0 z-50'>
             <div className='w-[80%] mx-auto h-24 flex items-center justify-between'>
                 <div className='font-medium text-4xl'>C.J.C</div>
                 <ul className='flex gap-10 text-base'>

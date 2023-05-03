@@ -1,8 +1,18 @@
 import Header from '@/components/Header/Header'
+import Head from 'next/head'
 
 export default function Home() {
   return (
-    <main className='relative'>
+    <>
+      <Head>
+        <title>My Portfolio</title>
+        <meta name="description" content="Code Challenge with TalentPlus" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/favicon.ico" />
+        <link href="https://api.fontshare.com/v2/css?f[]=satoshi@700,500,301,701,300,501,401,400&display=swap" rel="stylesheet" />
+        <link href="https://api.fontshare.com/v2/css?f[]=clash-display@200,400,700,500,600,300&display=swap" rel="stylesheet" />
+      </Head>
+    <main className='relative font-font-clash'>
       <Header />
       <div className='relative z-40 h-auto text-gray-100/90'>
          <svg className='h-full w-full absolute left-0 top-0 z-30' viewBox="" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -62,10 +72,10 @@ export default function Home() {
 </clipPath>
 </defs>
         </svg>
-        <div className=' pt-32 pb-10 w-[80%] mx-auto h-full items-center flex justify-between gap-28 flex-wrap'>
+        <div className=' pt-36 pb-16 w-[80%] mx-auto h-full items-center flex justify-between gap-28 flex-wrap'>
           <div className='flex-1 relative'>
-            <h2 className='text-4xl' >Christian Junior Chiemela</h2>
-            <p className='text-xl text-gray-200/70 mt-5'>
+            <h2 className='text-4xl font-font-clash' >Christian Junior Chiemela</h2>
+            <p className='text-xl text-gray-200/70 mt-5 font-font-clash'>
               Exceptional and detail-oriented frontend developer and a writer with over 3+ years of experience in building responsive
               websites and an in-depth understanding of modern web practices, cross-browser and cross-platform coding & styling skills.
               Ability to work in a fast-paced, team-oriented, dynamic environment and has good communication skills.
@@ -73,8 +83,8 @@ export default function Home() {
             <p className='text-xl text-gray-200/70 mt-5'>
               Exceptional and detail-oriented frontend developer and a writer with over 3+ years of experience in
             </p>
-            <div className='mt-10 gap-6 flex flex-col'>
-              <div className='text-2xl'>Resume</div>
+            <div className='mt-8 gap-6 flex'>
+              {/* <div className='text-2xl'>Resume</div> */}
             <button className='bg-white z-40 w-32 h-12 mt-2 text-gray-600'>Hire Me</button>
             </div>
           </div>
@@ -84,22 +94,22 @@ export default function Home() {
           </div>
         </div>
      </div>
-      <div className='bg-black w-full h-24 flex items-center border'>
-        <div className='w-[80%] mx-auto'>Add client logos here...</div>
-      </div>
-      <div className='w-[80%] mx-auto mt-10'>
-        <h2 className='text-3xl'>Portfolio</h2>
-        <div className='mt-10 grid grid-cols-3 gap-5'>
-          <div className='bg-gray-600 h-64'>Card1</div>
+      <div className='pt-10 border-t border-gray-700/70'>
+        <div className='w-[80%] mx-auto'>
+           <h2 className='text-3xl'>Portfolio</h2>
+        <div className='mt-6 grid grid-cols-3 gap-5'>
           <div className='bg-gray-600 h-64'>Card1</div>
           <div className='bg-gray-600 h-64'>Card1</div>
           <div className='bg-gray-600 h-64'>Card1</div>
         </div>
+       </div>
       </div>
       <div className='w-[80%] mx-auto mt-10'>
         <h2>Article</h2>
         Add Article here
       </div>
-    </main>
+      <div className='text-center mt-10'>Footer</div>
+      </main>
+    </>
   )
 }
