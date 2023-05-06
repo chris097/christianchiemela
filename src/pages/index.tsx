@@ -1,5 +1,9 @@
 import Header from '@/components/Header/Header'
 import Head from 'next/head'
+import Link from 'next/link';
+import { BsGithub } from 'react-icons/bs';
+import { AiFillLinkedin, AiFillTwitterCircle } from 'react-icons/ai';
+import { IoMailUnreadOutline } from 'react-icons/io5';
 
 export default function Home() {
   return (
@@ -74,16 +78,13 @@ export default function Home() {
         </svg>
         <div className=' pt-36 pb-16 w-[80%] mx-auto h-full items-center flex justify-between gap-28 flex-wrap'>
           <div className='flex-1 relative'>
-            <h2 className='text-4xl font-font-clash' >Christian Junior Chiemela</h2>
+            <h2 className='text-5xl font-bold font-font-clash' >Christian Junior Chiemela</h2>
             <p className='text-xl text-gray-200/70 mt-5 font-font-clash'>
               Exceptional and detail-oriented frontend developer and a writer with over 3+ years of experience in building responsive
               websites and an in-depth understanding of modern web practices, cross-browser and cross-platform coding & styling skills.
               Ability to work in a fast-paced, team-oriented, dynamic environment and has good communication skills.
             </p>
-            <p className='text-xl text-gray-200/70 mt-5'>
-              Exceptional and detail-oriented frontend developer and a writer with over 3+ years of experience in
-            </p>
-            <div className='mt-8 gap-6 flex'>
+            <div className='mt-6 gap-6 flex'>
               {/* <div className='text-2xl'>Resume</div> */}
             <button className='bg-white z-40 w-32 h-12 mt-2 text-gray-600'>Hire Me</button>
             </div>
@@ -105,10 +106,30 @@ export default function Home() {
        </div>
       </div>
       <div className='w-[80%] mx-auto mt-10'>
-        <h2>Article</h2>
-        Add Article here
+        <h2 className='text-3xl'>Article</h2>
+          <div className='mt-6 grid grid-cols-2 gap-20 pb-10'>
+            <div>
+              <p className='text-3xl font-font-satoshi font-extrabold'>
+              Generating and use of SSH key for Github permission denied (public-key) for window users.
+              </p>
+              <div className='text-md my-3 flex justify-between items-center'>
+                <div><span className='mr-2'>2023-02-12</span> | <span className='ml-2'>5 mins Read</span></div>
+                <div className='text-xs bg-gray-800 w-12 h-6 rounded-full flex justify-center items-center cursor-pointer'>View</div>
+              </div>
+            </div>
+        </div>
       </div>
-      <div className='text-center mt-10'>Footer</div>
+        <div className='h-32  border-t border-gray-700/70'>
+          <div className='flex flex-col h-full items-center justify-center'>
+            <div className='flex gap-6 items-center justify-center'>
+            <Link href=""><IoMailUnreadOutline size={20} /></Link>
+            <Link href=""><AiFillLinkedin size={20} /></Link>
+            <Link href=""><BsGithub size={20} /></Link>
+            <Link href=""><AiFillTwitterCircle size={24} /></Link>
+          </div>
+            <p className='text-center text-xs mt-2'>Chris097 © 2023 . All Rights Reserved Christian Chiemela</p>
+          </div>
+        </div>
       </main>
     </>
   )
