@@ -14,7 +14,7 @@ export default function Home() {
         <title>Christian Chiemela | Homepage</title>
         <meta name="description" content="Christian Chiemela portfolio" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/me.jpeg" />
         <link href="https://api.fontshare.com/v2/css?f[]=satoshi@700,500,301,701,300,501,401,400&display=swap" rel="stylesheet" />
         <link href="https://api.fontshare.com/v2/css?f[]=clash-display@200,400,700,500,600,300&display=swap" rel="stylesheet" />
       </Head>
@@ -79,8 +79,8 @@ export default function Home() {
 </svg>
               </div>
             <div className='bg-black h-full w-3/5 z-40 border border-gray-600 absolute' />
-              <div className='bg-slate-600 h-full w-3/5 z-40 top-10 left-14 absolute'>
-                {/* <Image src={me} alt="me" /> */}
+              <div className='h-full w-3/5 z-40 top-10 left-14 absolute'>
+                <Image className='object-fill' src={me} alt="me" />
                 </div>
           </div>
         </div>

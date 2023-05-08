@@ -1,9 +1,9 @@
+import React from 'react'
 import BackgroundSvg from '@/assets/svg/BackgroundSvg'
 import Card from '@/components/Card/ProjectCard'
 import Footer from '@/components/Footer/Footer'
 import Header from '@/components/Header/Header'
 import Head from 'next/head'
-import React from 'react'
 
 const Portfolio = () => {
   return (
