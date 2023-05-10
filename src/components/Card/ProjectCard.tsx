@@ -33,7 +33,7 @@ const Card = () => {
                     ))}
                 </div>
                 <div className='flex justify-end mt-4'>
-                    <Link href="/portfolio"><span className='border-b hover:opacity-60 text-xs'>View More -</span></Link>
+                    <Link href="/portfolio"><span className='border-b hover:opacity-60 text-xs'>View More</span></Link>
                 </div>
             </div>
         </>
