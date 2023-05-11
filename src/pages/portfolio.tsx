@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import BackgroundSvg from '@/assets/svg/BackgroundSvg'
 import Card from '@/components/Card/ProjectCard'
 import Footer from '@/components/Footer/Footer'
@@ -9,10 +9,10 @@ const Portfolio = () => {
   return (
     <>
       <Head>
-        <title>Christian Chiemela | Homepage</title>
+        <title>Christian Chiemela | Portfolio</title>
         <meta name="description" content="Christian Chiemela portfolio" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/me.jpeg" />
         <link href="https://api.fontshare.com/v2/css?f[]=satoshi@700,500,301,701,300,501,401,400&display=swap" rel="stylesheet" />
         <link href="https://api.fontshare.com/v2/css?f[]=clash-display@200,400,700,500,600,300&display=swap" rel="stylesheet" />
       </Head>
@@ -20,11 +20,12 @@ const Portfolio = () => {
         <Header />
         <div className='relative font-font-satoshi'>
           <BackgroundSvg />
-          <div className='h-screen pt-36'>
-            <div className='flex flex-col justify-center items-center'>
-              <h1 className='text-3xl'>Christian Chiemela</h1>
+          <div className='h-screen pt-36 w-[80%] mx-auto'>
+            <div className='font-font-clash'>
+              <h1 className='text-2xl'>Dear Recruiter,</h1>
+              <p className='text-6xl mt-4 font-medium'>Welcome to my project hub</p>
             </div>
-            <Card />
+            <div className='mt-10'><Card /></div>
           </div>
         <Footer />
         </div>

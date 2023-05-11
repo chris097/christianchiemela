@@ -1,11 +1,11 @@
 import Header from '@/components/Header/Header'
 import Head from 'next/head'
-import Card from '@/components/Card/ProjectCard';
+import ProjectCard from '@/components/Card/ProjectCard';
 import BackgroundSvg from '@/assets/svg/BackgroundSvg';
 import Footer from '@/components/Footer/Footer';
-// import { DiJavascript1 } from 'react-icons/di';
 import me from '../assets/images/me.jpeg';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -84,9 +84,16 @@ export default function Home() {
                 </div>
           </div>
         </div>
-     </div>
-      <Card />
-      <div className='w-[80%] mx-auto mt-10 relative z-40'>
+        </div>
+        <div className='w-[80%] mx-auto z-40 relative'>
+                <h2 className='text-3xl'>Portfolio</h2>
+            
+      <ProjectCard />
+                <div className='flex justify-end cursor-pointer relative hover:opacity-80 mt-4'>
+                    <Link href="/portfolio"><span className='border-b hover:opacity-60 text-xs'>View More</span></Link>
+                </div>
+            </div>
+      <div className='w-[80%] mx-auto pt-10 pb-32 relative z-40'>
         <h2 className='text-3xl'>Article</h2>
           <div className='mt-6 grid grid-cols-2 gap-20 pb-10'>
             <div>

@@ -14,11 +14,9 @@ const Card = () => {
     return (
         <>
             <BackgroundSvg />
-            <div className='w-[80%] mx-auto z-40 relative'>
-                <h2 className='text-3xl'>Portfolio</h2>
-                <div className='mt-6 grid grid-cols-3 gap-5'>
+            <div className='mt-6 grid grid-cols-3 gap-5'>
                     {projectInfo.map((project) => (
-                        <div className='border border-gray-600 p-3 hover:scale-105 transition-all rounded bg-black  h-auto'>
+                        <div key={project.id} className='border border-gray-600 p-3 hover:scale-105 transition-all rounded bg-black h-auto z-40'>
                         <Image className='w-full h-48 object-fill bg-no-repeat bg-cover' src={project.image} alt='soccerwiz' />
                         <div>
                             <div className='flex justify-between items-center mt-2'>
@@ -26,18 +24,15 @@ const Card = () => {
                             <Link href={project.url} className='text-xs border-b hover:opacity-60'>Visit App</Link>
                             </div>
                         <div className='flex justify-between items-center mt-2'>
-                            <button className='text-xs bg-gray-800/60 hover:opacity-60 w-full py-2'>Learn More</button>
+                            <Link href='/projectDetails' className='text-xs bg-gray-800/60 text-center hover:opacity-60 w-full py-2'>Learn More</Link>
                         </div>
                         </div>
                     </div>
                     ))}
                 </div>
-                <div className='flex justify-end mt-4'>
-                    <Link href="/portfolio"><span className='border-b hover:opacity-60 text-xs'>View More</span></Link>
-                </div>
-            </div>
         </>
     )
 };
+
 
 export default Card
