@@ -6,6 +6,7 @@ import Footer from '@/components/Footer/Footer';
 import me from '../assets/images/me.jpeg';
 import Image from 'next/image';
 import Link from 'next/link';
+import Article from '@/components/Article/Article';
 
 export default function Home() {
   return (
@@ -85,6 +86,8 @@ export default function Home() {
           </div>
         </div>
         </div>
+        <div className='relative'>
+          <BackgroundSvg />
         <div className='w-[80%] mx-auto z-40 relative'>
                 <h2 className='text-3xl'>Portfolio</h2>
             
@@ -93,20 +96,13 @@ export default function Home() {
                     <Link href="/portfolio"><span className='border-b hover:opacity-60 text-xs'>View More</span></Link>
                 </div>
             </div>
-      <div className='w-[80%] mx-auto pt-10 pb-32 relative z-40'>
+        <div className='w-[80%] mx-auto pt-10 pb-32 relative z-40'>
         <h2 className='text-3xl'>Article</h2>
           <div className='mt-6 grid grid-cols-2 gap-20 pb-10'>
-            <div>
-              <p className='text-3xl font-font-satoshi font-extrabold'>
-              Generating and use of SSH key for Github permission denied (public-key) for window users.
-              </p>
-              <div className='text-md my-3 flex justify-between items-center'>
-                <div><span className='mr-2'>2023-02-12</span> | <span className='ml-2'>5 mins Read</span></div>
-                <div className='text-xs bg-gray-800/60 w-12 h-6 rounded-full flex justify-center items-center cursor-pointer hover:opacity-60'>View</div>
-              </div>
-            </div>
+           <Article />
         </div>
-      </div>
+          </div>
+          </div>
         <Footer />
       </main>
     </>
