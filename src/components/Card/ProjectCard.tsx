@@ -1,5 +1,4 @@
 import React from 'react';
-import BackgroundSvg from '@/assets/svg/BackgroundSvg';
 import soccerwiz from '@/assets/images/soccerwiz.png';
 import Image from 'next/image';
 import Link from 'next/link';
