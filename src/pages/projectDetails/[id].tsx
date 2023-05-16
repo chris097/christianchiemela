@@ -1,10 +1,18 @@
+import React from 'react';
 import BackgroundSvg from '@/assets/svg/BackgroundSvg';
 import Footer from '@/components/Footer/Footer';
 import Header from '@/components/Header/Header';
 import Head from 'next/head';
-import React from 'react';
+import Image from 'next/image';
+import soccerwiz from '@/assets/images/soccerwiz.png';
+import { projects } from '@/helpers/data';
+import { useRouter } from 'next/router';
 
 const projectDetails = () => {
+
+  const router = useRouter();
+  const { id } = router.query;
+
   return (
     <>
       <Head>
@@ -19,22 +27,22 @@ const projectDetails = () => {
         <Header />
         <div className='pt-36 mx-auto w-[80%] h-screen relative'>
           <BackgroundSvg />
-          <div className='flex gap-8'>
+          <div className='flex gap-8 items-center'>
             <div className='flex-1'>
               <div className='flex flex-col h-[500px] justify-center font-font-clash'>
-                <h2 className='text-3xl font-medium'>Cov19Strain</h2>
-                <p className='mt-2 text-xl'>ov19Strain tracker is an application that help you keep tracks of covid-19 situation locality and even beyond your locality. This application will teach/guide you to prevent yourself from been infected.</p>
+                <h2 className='text-3xl font-medium'>{projects[0].name}</h2>
+                <p className='mt-2 text-xl'>{projects[0].description}</p>
                 <div className='mt-6 flex gap-4 flex-wrap'>
-                  <div className='border w-32 flex bg-gray-800/60 border-gray-600 justify-center'>Javasript</div>
-                  <div className='border w-32 flex bg-gray-800/60 border-gray-600 justify-center'>React.Js</div>
-                  <div className='border w-32 flex bg-gray-800/60 border-gray-600 justify-center'>TailwindCSS</div>
-                  <div className='border w-32 flex bg-gray-800/60 border-gray-600 justify-center'>API</div>
-                  <div className='border w-32 flex bg-gray-800/60 border-gray-600 justify-center'>Flutterwave</div>
-                  <div className='border w-32 flex bg-gray-800/60 border-gray-600 justify-center'>CSS3</div>
+                  {projects[0].metadata.map(data => (
+                    <div
+                      className='border w-32 flex bg-gray-800/60 border-gray-600 justify-center'>{data}</div>
+                  ))}
                 </div>
               </div>
             </div>
-            <div className='flex-1 border h-[500px]'>blocka</div>
+            <div className='flex-1 border h-[300px] bg-black z-40'>
+              <Image className='w-full h-full bg-cover object-fill ' src={soccerwiz} alt="project image" />
+            </div>
           </div>
         </div>
         <Footer />
