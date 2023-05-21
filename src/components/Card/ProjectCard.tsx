@@ -22,7 +22,7 @@ const Card = () => {
                         <div>
                             <div className='flex justify-between items-center mt-2'>
                                     <p className='text-xl'>{project.name}</p>
-                            <Link href={project.link} className='text-xs border-b hover:opacity-60'>Visit Apps</Link>
+                            <Link href={project.link} className='text-xs border-b hover:opacity-60'>Visit App</Link>
                             </div>
                         <div className='flex justify-between items-center mt-2'>
                             <Link href={`/projectDetails/${currentId}`} className='text-xs bg-gray-800/60 text-center hover:opacity-60 w-full py-2'>Learn More</Link>
