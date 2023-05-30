@@ -3,7 +3,7 @@ import Head from 'next/head'
 import ProjectCard from '@/components/Card/ProjectCard';
 import BackgroundSvg from '@/assets/svg/BackgroundSvg';
 import Footer from '@/components/Footer/Footer';
-import me from '../assets/images/me.jpeg';
+import me from "../assets/images/me.jpeg";
 import Image from 'next/image';
 import Link from 'next/link';
 import Article from '@/components/Article/Article';
