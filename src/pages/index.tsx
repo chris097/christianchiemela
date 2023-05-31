@@ -93,7 +93,7 @@ export default function Home() {
             
       <ProjectCard />
                 <div className='flex justify-end cursor-pointer relative hover:opacity-80 mt-4'>
-                    <Link href="/portfolio"><span className='border-b hover:opacity-60 text-xs'>View More</span></Link>
+                    <Link href="/portfolio"><span className='border-b hover:opacity-60 text-xs'>View Mores</span></Link>
                 </div>
             </div>
         <div className='w-[80%] mx-auto pt-10 pb-32 relative z-40'>
