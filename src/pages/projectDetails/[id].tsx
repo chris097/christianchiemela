@@ -10,8 +10,7 @@ import { useRouter } from 'next/router';
 
 const projectDetails = () => {
 
-  const router = useRouter();
-  const { id }: any = router.query;
+  const {id}:any = useRouter().query;
 
   return (
     <>
@@ -33,8 +32,9 @@ const projectDetails = () => {
                 <h2 className='text-3xl font-medium'>{projects[id]?.name}</h2>
                 <p className='mt-2 text-xl'>{projects[id]?.description}</p>
                 <div className='mt-6 flex gap-4 flex-wrap'>
-                  {projects[id]?.metadata?.map(data => (
+                  {projects[id]?.metadata?.map((data, index) => (
                     <div
+                      key={index}
                       className='border w-32 flex bg-gray-800/60 border-gray-600 justify-center'>{data}</div>
                   ))}
                 </div>
