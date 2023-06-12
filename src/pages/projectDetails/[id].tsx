@@ -11,7 +11,7 @@ import { useRouter } from 'next/router';
 const projectDetails = () => {
 
   const router = useRouter();
-  const { id } = router.query;
+  const { id }: any = router.query;
 
   return (
     <>
@@ -30,10 +30,10 @@ const projectDetails = () => {
           <div className='flex gap-8 items-center'>
             <div className='flex-1'>
               <div className='flex flex-col h-[500px] justify-center font-font-clash'>
-                <h2 className='text-3xl font-medium'>{projects[0].name}</h2>
-                <p className='mt-2 text-xl'>{projects[0].description}</p>
+                <h2 className='text-3xl font-medium'>{projects[id]?.name}</h2>
+                <p className='mt-2 text-xl'>{projects[id]?.description}</p>
                 <div className='mt-6 flex gap-4 flex-wrap'>
-                  {projects[0].metadata.map(data => (
+                  {projects[id]?.metadata?.map(data => (
                     <div
                       className='border w-32 flex bg-gray-800/60 border-gray-600 justify-center'>{data}</div>
                   ))}

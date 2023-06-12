@@ -12,7 +12,7 @@ export const projects: {
     metadata: string[]
 }[] = [
         {
-            id: 1, description: "cov19Strain tracker is an application that help you keep tracks of covid-19 situation locality and even beyond your locality. This application will teach/guide you to prevent yourself from been infected.",
+            id: 1, description: "A trivia app that enables football enthusiasts and sports lovers to be rewarded for their passion and knowledge about the sport",
             name: 'Soccerwiz',
             link: 'https://soccerwiz-frontend.vercel.app/',
             url: soccerwiz,

@@ -98,7 +98,7 @@ export default function Home() {
             </div>
         <div className='w-[80%] mx-auto pt-10 pb-32 relative z-40'>
         <h2 className='text-3xl'>Article</h2>
-          <div className='mt-6 grid grid-cols-2 gap-20 pb-10'>
+          <div className='mt-6 grid lg:grid-cols-2 grid-cols-1 gap-20 pb-10'>
            <Article />
         </div>
           </div>
