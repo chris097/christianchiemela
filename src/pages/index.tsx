@@ -89,7 +89,7 @@ export default function Home() {
         <div className='relative'>
           <BackgroundSvg />
         <div className='w-[80%] mx-auto z-40 relative'>
-                <h2 className='text-3xl'>Portfolio</h2>
+                <h2 className='text-3xl'>Projects</h2>
             
       <ProjectCard />
                 <div className='flex justify-end cursor-pointer relative hover:opacity-80 mt-4'>
