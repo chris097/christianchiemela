@@ -23,7 +23,7 @@ export default function Home() {
       <Header />
       <div className='relative z-40 h-auto text-gray-100/90'>
          <BackgroundSvg />
-        <div className='pt-36 pb-16 w-[80%] mx-auto h-full items-center flex justify-between gap-28 flex-wrap'>
+        <div className='pt-36 pb-16 w-[80%] mx-auto h-full items-center lg:flex block justify-between gap-28 flex-wrap'>
             <div className='flex-1 relative'>
               <div className='mb-4'><svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M8 16.7401C3.584 16.7401 0 12.9941 0 8.37855C0 3.76296 3.584 0.0169678 8 0.0169678C12.416 0.0169678 16 3.76296 16 8.37855C16 12.9941 12.416 16.7401 8 16.7401ZM8 2.79301C5.056 2.79301 2.656 5.30149 2.656 8.37855C2.656 11.4556 5.056 13.9641 8 13.9641C10.944 13.9641 13.344 11.4556 13.344 8.37855C13.344 5.30149 10.944 2.79301 8 2.79301Z" fill="#00C040"/>
@@ -47,7 +47,7 @@ export default function Home() {
             <button className='bg-white z-40 w-32 h-12 mt-2 text-gray-600'>Hire Me</button>
             </div>
           </div>
-            <div className='flex-1 flex justify-center relative h-[350px]'>
+            <div className='flex-1 flex justify-center relative h-[350px] mt-16 lg:mt-0'>
               <div className='absolute left-0'>
                 <svg width="45" height="45" viewBox="0 0 95 95" fill="none" xmlns="http://www.w3.org/2000/svg">
 <rect x="0.796875" y="0.56543" width="93.6036" height="93.6036" rx="9.36036" fill="white"/>
