@@ -11,7 +11,7 @@ const Footer = () => {
             <div className='flex gap-6 items-center justify-center'>
             <Link href=""><IoMailUnreadOutline size={20} /></Link>
             <Link href=""><AiFillLinkedin size={20} /></Link>
-            <Link href=""><BsGithub size={20} /></Link>
+            <Link target='_blank' href="https://github.com/chris097"><BsGithub size={20} /></Link>
             <Link href=""><AiFillTwitterCircle size={24} /></Link>
           </div>
             <p className='text-center text-xs mt-2'>Chris097 © 2023 . All Rights Reserved Christian Chiemela</p>

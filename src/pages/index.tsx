@@ -36,8 +36,8 @@ export default function Home() {
 
               
 </div>
-            <h2 className='text-5xl font-bold font-font-clash' >Christian Junior Chiemela</h2>
-            <p className='text-xl text-gray-200/70 mt-5 font-font-clash'>
+            <h2 className='lg:text-5xl text-3xl font-bold font-font-clash' >Christian Junior Chiemela</h2>
+            <p className='md:text-xl text-base text-gray-200/70 mt-5 font-font-clash'>
               Exceptional and detail-oriented frontend developer and a writer with over 2+ years of experience in building responsive
               websites and an in-depth understanding of modern web practices, cross-browser and cross-platform coding & styling skills.
               Ability to work in a fast-paced, team-oriented, dynamic environment and has good communication skills.
@@ -79,9 +79,9 @@ export default function Home() {
 </defs>
 </svg>
               </div>
-            <div className='bg-black h-full w-3/5 z-40 border border-gray-600 absolute' />
-              <div className='h-full w-3/5 z-40 top-10 left-14 absolute'>
-                <Image className='object-fill' src={me} alt="me" />
+            <div className='bg-black h-[300px] lg:w-3/5 md:w-[80%] w-full z-40 border border-gray-600 absolute' />
+              <div className='h-[300px] lg:w-3/5 md:w-[70%] w-full z-40 md:top-10 top-5 lg:left-14 lg:px-0 px-5 absolute'>
+                <Image className='object-fill h-full w-full' src={me} alt="me" />
                 </div>
           </div>
         </div>
