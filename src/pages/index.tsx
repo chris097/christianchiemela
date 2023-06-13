@@ -47,8 +47,8 @@ export default function Home() {
             <button className='bg-white z-40 w-32 h-12 mt-2 text-gray-600'>Hire Me</button>
             </div>
           </div>
-            <div className='flex-1 flex justify-center relative h-[350px] mt-16 lg:mt-0'>
-              <div className='absolute left-0'>
+            <div className='flex-1 flex justify-center relative h-[350px] mt-24 lg:mt-0'>
+              <div className='absolute left-0 -top-14'>
                 <svg width="45" height="45" viewBox="0 0 95 95" fill="none" xmlns="http://www.w3.org/2000/svg">
 <rect x="0.796875" y="0.56543" width="93.6036" height="93.6036" rx="9.36036" fill="white"/>
 <g clip-path="url(#clip0_1476_116)">
@@ -68,7 +68,7 @@ export default function Home() {
 
               </div>
 
-              <div className='absolute right-0 bottom-0'>
+              <div className='absolute right-0 md:bottom-0 -bottom-6'>
                 <svg width="45" height="45" viewBox="0 0 95 95" fill="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
 <rect x="0.649414" y="0.668945" width="93.6036" height="93.6036" rx="9.36036" fill="url(#pattern0)"/>
 <defs>
@@ -79,8 +79,8 @@ export default function Home() {
 </defs>
 </svg>
               </div>
-            <div className='bg-black h-[300px] lg:w-3/5 md:w-[80%] w-full z-40 border border-gray-600 absolute' />
-              <div className='h-[300px] lg:w-3/5 md:w-[70%] w-full z-40 md:top-10 top-5 lg:left-14 lg:px-0 px-5 absolute'>
+            <div className='bg-black xl:h-full h-[300px] lg:w-3/5 md:w-[80%] sm:w-[83%] w-full z-40 border border-gray-600 absolute' />
+              <div className='xl:h-full h-[300px] lg:w-3/5 md:w-[70%] sm:w-[80%] w-full z-40 md:top-10 top-5 lg:left-14 lg:px-0 px-5 absolute'>
                 <Image className='object-fill h-full w-full' src={me} alt="me" />
                 </div>
           </div>

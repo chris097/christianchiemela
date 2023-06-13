@@ -8,7 +8,7 @@ const Card = () => {
 
     return (
         <>
-            <div className='mt-6 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5'>
+            <div className='mt-6 grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-5'>
                     {projects.map((project, index) => (
                         <div key={project.id} className='border border-gray-600 p-3 hover:scale-105 transition-all rounded bg-black h-auto z-40'>
                         <Image className='w-full h-48 object-center bg-no-repeat bg-cover' src={project.url} alt={project.name} />
