@@ -6,7 +6,6 @@ import Footer from '@/components/Footer/Footer';
 import Header from '@/components/Header/Header';
 import Head from 'next/head';
 import Image from 'next/image';
-import soccerwiz from '@/assets/images/soccerwiz.png';
 
 
 const ProjectDetails = () => {
@@ -30,10 +29,10 @@ const ProjectDetails = () => {
           <div className='flex gap-8 items-center'>
             <div className='flex-1'>
               <div className='flex flex-col h-[500px] justify-center font-font-clash'>
-                <h2 className='text-3xl font-medium'>{projects[0]?.name}</h2>
-                <p className='mt-2 text-xl'>{projects[0]?.description}</p>
+                <h2 className='text-3xl font-medium'>{projects[id]?.name}</h2>
+                <p className='mt-2 text-xl'>{projects[id]?.description}</p>
                 <div className='mt-6 flex gap-4 flex-wrap'>
-                  {projects[0]?.metadata?.map((data, index) => (
+                  {projects[id]?.metadata?.map((data, index) => (
                     <div
                       key={index}
                       className='border w-32 flex bg-gray-800/60 border-gray-600 justify-center'>{data}</div>
@@ -42,7 +41,7 @@ const ProjectDetails = () => {
               </div>
             </div>
             <div className='flex-1 border h-[300px] bg-black z-40'>
-              <Image className='w-full h-full bg-cover object-fill ' src={soccerwiz} alt="project image" />
+              <Image className='w-full h-full bg-cover object-fill ' src={projects[id]?.url} alt="project image" />
             </div>
           </div>
         </div>

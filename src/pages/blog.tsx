@@ -1,7 +1,11 @@
+import BackgroundSvg from '@/assets/svg/BackgroundSvg'
+import React from 'react';
+import Article from '@/components/Article/Article'
 import Footer from '@/components/Footer/Footer'
 import Header from '@/components/Header/Header'
 import Head from 'next/head'
-import React from 'react'
+import Image from 'next/image'
+import me from "../assets/images/me.jpeg";
 
 const blog = () => {
   return (
@@ -16,6 +20,16 @@ const blog = () => {
       </Head>
       <main>
         <Header />
+        <div className='font-font-clash pt-36 w-[80%] mx-auto'>
+              <h1 className='text-2xl'>Dear Recruiter,</h1>
+              <p className='text-6xl mt-4 font-medium'>Welcome to my blog house</p>
+            </div>
+        <div className='w-[80%] mx-auto mt-24 relative z-40'>
+        <h2 className='text-3xl'>Article</h2>
+          <div className='mt-6 grid lg:grid-cols-2 grid-cols-1 gap-20 pb-10'>
+           <Article />
+        </div>
+          </div>
         <Footer />
       </main>
     </>
