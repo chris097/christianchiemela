@@ -13,7 +13,7 @@ export const projects: {
 }[] = [
     {
         id: 1,
-        description: "Yabacon",
+        description: "Yabacon is a diverse mix of professionals, innovative communities and trailblazing organizations shaking up the African technology ecosystem.",
         name: 'Yabacon',
         link: 'https://sandbox-yabacon-pl24l.ondigitalocean.app/',
         url: yab,

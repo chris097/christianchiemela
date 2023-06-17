@@ -89,7 +89,7 @@ export default function Home() {
         <div className='relative'>
           <BackgroundSvg />
         <div className='w-[80%] mx-auto z-40 relative'>
-                <h2 className='text-3xl'>Projects</h2>
+                <h2 className='text-5xl mt-4 font-medium font-font-clash'>Projects</h2>
             
       <ProjectCard />
                 <div className='flex justify-end cursor-pointer relative hover:opacity-80 mt-4'>
@@ -97,7 +97,7 @@ export default function Home() {
                 </div>
             </div>
         <div className='w-[80%] mx-auto pt-10 pb-32 relative z-40'>
-        <h2 className='text-3xl'>Article</h2>
+        <h2 className='text-5xl mt-4 font-medium font-font-clash'>Article</h2>
           <div className='mt-6 grid lg:grid-cols-2 grid-cols-1 gap-20 pb-10'>
            <Article />
         </div>
