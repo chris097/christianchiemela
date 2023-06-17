@@ -24,11 +24,11 @@ const ProjectDetails = () => {
       </Head>
       <main>
         <Header />
-        <div className='pt-36 mx-auto w-[80%] h-screen relative'>
           <BackgroundSvg />
-          <div className='flex gap-8 items-center'>
+        <div className='pt-36 mx-auto w-[80%] h-screen relative'>
+          <div className='md:flex block gap-8 items-center'>
             <div className='flex-1'>
-              <div className='flex flex-col h-[500px] justify-center font-font-clash'>
+              <div className='flex flex-col relative md:h-[500px] justify-center font-font-clash'>
                 <h2 className='text-3xl font-medium'>{projects[id]?.name}</h2>
                 <p className='mt-2 text-xl'>{projects[id]?.description}</p>
                 <div className='mt-6 flex gap-4 flex-wrap'>
@@ -40,7 +40,7 @@ const ProjectDetails = () => {
                 </div>
               </div>
             </div>
-            <div className='flex-1 border h-[300px] bg-black z-40'>
+            <div className='flex-1 border h-[300px] bg-black z-40 md:mt-0 mt-10 relative'>
               <Image className='w-full h-full bg-cover object-fill ' src={projects[id]?.url} alt="project image" />
             </div>
           </div>

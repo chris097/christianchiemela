@@ -6,7 +6,7 @@ import { IoMailUnreadOutline } from 'react-icons/io5';
 
 const Footer = () => {
   return (
-    <div className='h-24 border-t border-gray-700/70 bg-black absolute left-0 bottom-0 w-full z-40'>
+    <div className='h-24 border-t border-gray-700/70 bg-black fixed left-0 bottom-0 w-full z-40'>
           <div className='flex flex-col h-full items-center justify-center'>
             <div className='flex gap-6 items-center justify-center'>
             <Link rel='noopener noreferrer' target='_blank' href="mailto:chrisfidel.international@gmail.com"><IoMailUnreadOutline size={20} /></Link>

@@ -38,7 +38,7 @@ export default function Home() {
 </div>
             <h2 className='lg:text-5xl text-3xl font-bold font-font-clash' >Christian Junior Chiemela</h2>
             <p className='md:text-xl text-base text-gray-200/70 mt-5 font-font-clash'>
-              Exceptional and detail-oriented frontend developer and a writer with over 2+ years of experience in building responsive
+              Exceptional and detail-oriented frontend developer and a writer with almost 3 years of experience in building responsive
               websites and an in-depth understanding of modern web practices, cross-browser and cross-platform coding & styling skills.
               Ability to work in a fast-paced, team-oriented, dynamic environment and has good communication skills.
             </p>

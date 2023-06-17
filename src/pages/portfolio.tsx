@@ -20,12 +20,14 @@ const Portfolio = () => {
         <Header />
         <div className='relative font-font-satoshi'>
           <BackgroundSvg />
-          <div className='h-screen pt-36 w-[80%] mx-auto'>
+          <div className='h-auto pt-36 w-[80%] mx-auto'>
             <div className='font-font-clash'>
-              <h1 className='text-2xl'>Dear Recruiter,</h1>
-              <p className='text-6xl mt-4 font-medium'>Welcome to my project hub</p>
+              <h1 className='text-2xl'>Hello,</h1>
+              <p className='xl:text-6xl lg:text-5xl text-4xl mt-4 font-medium'>Welcome to my project hub</p>
             </div>
-            <div className='mt-10'><Card /></div>
+            <div className='mt-10 mb-28'>
+              <Card />
+            </div>
           </div>
         <Footer />
         </div>

@@ -21,7 +21,7 @@ const blog = () => {
       <main>
         <Header />
         <div className='font-font-clash pt-36 w-[80%] mx-auto'>
-              <h1 className='text-2xl'>Dear Recruiter,</h1>
+              <h1 className='text-2xl'>Hello,</h1>
               <p className='text-6xl mt-4 font-medium'>Welcome to my blog house</p>
             </div>
         <div className='w-[80%] mx-auto mt-24 relative z-40'>
