@@ -30,7 +30,7 @@ const ProjectDetails = () => {
             <div className='flex-1'>
               <div className='flex flex-col relative md:h-[500px] justify-center font-font-clash'>
                 <h2 className='text-3xl font-medium'>{projects[id]?.name}</h2>
-                <p className='mt-2 text-xl'>{`${projects[id]?.description} Learn more`} <a className='text-blue-600' href={projects[id].link}>here</a></p>
+                <p className='mt-2 text-xl'>{`${projects[id]?.description} Learn more`} <a className='text-blue-600' href={projects[id]?.link}>here</a></p>
                 <div className='mt-6 flex gap-4 flex-wrap'>
                   {projects[id]?.metadata?.map((data, index) => (
                     <div
