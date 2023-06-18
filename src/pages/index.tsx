@@ -7,6 +7,8 @@ import me from "../assets/images/me.jpeg";
 import Image from 'next/image';
 import Link from 'next/link';
 import Article from '@/components/Article/Article';
+import { projects } from '@/helpers/data';
+// import cv from "@/assets/images/c"
 
 export default function Home() {
   return (
@@ -20,7 +22,8 @@ export default function Home() {
         <link href="https://api.fontshare.com/v2/css?f[]=clash-display@200,400,700,500,600,300&display=swap" rel="stylesheet" />
       </Head>
     <main className='relative font-font-clash'>
-      <Header />
+        <Header />
+        <span className="absolute bg-gray-500 -left-28 -top-28 rounded-full opacity-[20%] blur-3xl aspect-square h-[350px] -z-10 animate-pulse" />
       <div className='relative z-40 h-auto text-gray-100/90'>
          <BackgroundSvg />
         <div className='pt-36 pb-16 w-[80%] mx-auto h-full items-center lg:flex block justify-between gap-28 flex-wrap'>
@@ -44,7 +47,12 @@ export default function Home() {
             </p>
             <div className='mt-6 gap-6 flex'>
               {/* <div className='text-2xl'>Resume</div> */}
-            <button className='bg-white z-40 w-32 h-12 mt-2 text-gray-600'>Hire Me</button>
+                <a href="mailto:chrisfidel.international@gmail.com">
+                  <button className='bg-white z-40 w-32 h-12 mt-2 text-gray-600 hover:opacity-75'>Hire Me</button>
+            </a>
+                <a rel='noopener noreferrer' target='_blank' href="https://drive.google.com/file/d/1aVJ0NU6oQTl_D7WuHIqcUG8zXB8jc-bV/view?usp=sharing" download="christian-cv">
+                   <button className='border text-white z-40 w-32 h-12 mt-2 bg-black hover:opacity-75'>Download CV</button>
+           </a>
             </div>
           </div>
             <div className='flex-1 flex justify-center relative h-[350px] mt-24 lg:mt-0'>
@@ -91,7 +99,7 @@ export default function Home() {
         <div className='w-[80%] mx-auto z-40 relative'>
                 <h2 className='text-5xl mt-4 font-medium font-font-clash'>Projects</h2>
             
-      <ProjectCard />
+      <ProjectCard project={projects.slice(0,3)} />
                 <div className='flex justify-end cursor-pointer relative hover:opacity-80 mt-4'>
                     <Link href="/portfolio"><span className='border-b hover:opacity-60 text-xs'>View Mores</span></Link>
                 </div>

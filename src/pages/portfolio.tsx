@@ -4,6 +4,7 @@ import Card from '@/components/Card/ProjectCard'
 import Footer from '@/components/Footer/Footer'
 import Header from '@/components/Header/Header'
 import Head from 'next/head'
+import { projects } from '@/helpers/data';
 
 const Portfolio = () => {
   return (
@@ -18,6 +19,7 @@ const Portfolio = () => {
       </Head>
       <main className='relative font-font-clash'>
         <Header />
+        <span className="absolute bg-gray-500 -left-28 -top-28 rounded-full opacity-[20%] blur-3xl aspect-square h-[350px] -z-10 animate-pulse" />
         <div className='relative font-font-satoshi'>
           <BackgroundSvg />
           <div className='h-auto pt-36 w-[80%] mx-auto'>
@@ -25,8 +27,8 @@ const Portfolio = () => {
               <h1 className='text-2xl'>Hello,</h1>
               <p className='xl:text-6xl lg:text-5xl text-4xl mt-4 font-medium'>Welcome to my project hub</p>
             </div>
-            <div className='mt-10 mb-28'>
-              <Card />
+            <div className='mt-10 pb-44'>
+              <Card project={projects} />
             </div>
           </div>
         <Footer />

@@ -20,6 +20,7 @@ const blog = () => {
       </Head>
       <main>
         <Header />
+        <span className="absolute bg-gray-500 -left-28 -top-28 rounded-full opacity-[20%] blur-3xl aspect-square h-[350px] -z-10 animate-pulse" />
         <div className='font-font-clash pt-36 w-[80%] mx-auto'>
               <h1 className='text-2xl'>Hello,</h1>
               <p className='text-6xl mt-4 font-medium'>Welcome to my blog house</p>

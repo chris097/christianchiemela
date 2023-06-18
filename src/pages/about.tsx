@@ -23,6 +23,7 @@ const About = () => {
       </Head>
       <main>
         <Header />
+        <span className="absolute bg-gray-500 -left-28 -top-28 rounded-full opacity-[20%] blur-3xl aspect-square h-[350px] -z-10 animate-pulse" />
         <div className='relative py-36 w-[80%] mx-auto'>
             <div className='font-font-clash'>
               <h1 className='text-2xl'>Hello,</h1>
@@ -31,7 +32,7 @@ const About = () => {
             {/* <Image className='w-full h-[600px] object-fill bg-no-repeat' src={me} alt="personal" /> */}
             <p className='lg:text-2xl mt-5 leading-normal text-lg'>I'm Christian Chiemela a frontend developer with almost 3years of experience in building simple and complex application for companies and individuals, a Nigerian based in Lagos.</p>
           </div>
-          <h3 className='xl:text-6xl lg:text-5xl text-4xl mt-16 font-medium font-font-clash'>Highlights Experiences</h3>
+          <h3 className='xl:text-6xl lg:text-5xl text-2xl mt-16 font-medium font-font-clash'>Highlights Experiences</h3>
           <Experience
             logo={<Yabacon />}
             name='Yabacon'

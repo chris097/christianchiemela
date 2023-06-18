@@ -24,6 +24,7 @@ const ProjectDetails = () => {
       </Head>
       <main>
         <Header />
+        <span className="absolute bg-gray-500 -left-28 -top-28 rounded-full opacity-[20%] blur-3xl aspect-square h-[350px] -z-10 animate-pulse" />
           <BackgroundSvg />
         <div className='pt-36 mx-auto w-[80%] h-screen relative'>
           <div className='md:flex block gap-8 items-center'>
