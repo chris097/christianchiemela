@@ -35,7 +35,7 @@ const Header = () => {
                         <div onClick={() => setOpen(false)} className='flex justify-end m-10'>
                             <TfiClose color='white' size={30} />
                         </div>
-                         <ul className='gap-10 text-base z-50 relative opacity-100 flex mt-10 flex-col items-center h-full w-full'>
+                         <ul className='gap-14 text-base z-50 relative opacity-100 flex justify-center -mt-20 flex-col items-center h-full w-full'>
                     {lists.map(list => (
                         <li key={list.id} className='cursor-pointer text-white z-50 text-2xl'>
                             <Link href={`${list.path}`}>{list.name}</Link>
