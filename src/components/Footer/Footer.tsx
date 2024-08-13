@@ -14,7 +14,7 @@ const Footer = () => {
             <Link rel='noopener noreferrer' target='_blank' href="https://github.com/chris097"><BsGithub size={20} /></Link>
             <Link rel='noopener noreferrer' href="https://twitter.com/chris_chiemela"><AiFillTwitterCircle size={24} /></Link>
           </div>
-            <p className='text-center text-xs mt-2'>Chris097 © 2023 . All Rights Reserved Christian Chiemela</p>
+            <p className='text-center text-xs mt-2'>Chris097 © 2024 . All Rights Reserved Christian Chiemela</p>
           </div>
         </div>
   )
