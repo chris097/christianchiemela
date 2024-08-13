@@ -10,7 +10,9 @@ import Image from 'next/image';
 
 const ProjectDetails = () => {
 
-  const {id}:any = useRouter().query;
+  const { id }: any = useRouter().query;
+  
+  const router = useRouter()
 
   return (
     <>
@@ -27,6 +29,7 @@ const ProjectDetails = () => {
         <span className="absolute bg-gray-500 -left-28 -top-28 rounded-full opacity-[20%] blur-3xl aspect-square h-[350px] -z-10 animate-pulse" />
           <BackgroundSvg />
         <div className='pt-36 mx-auto w-[80%] h-screen relative'>
+          <div className='cursor-pointer font-font-clash' onClick={() => router.back()}> {`< Back`}</div>
           <div className='md:flex block gap-8 items-center'>
             <div className='flex-1'>
               <div className='flex flex-col relative md:h-[500px] justify-center font-font-clash'>

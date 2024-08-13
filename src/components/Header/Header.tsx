@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import {FiMenu }from 'react-icons/fi';
 import {TfiClose }from 'react-icons/tfi';
+import Image from 'next/image';
+import github from '@/assets/images/github.jpeg'
 
 type ListProps = {
     name: string
@@ -22,13 +24,18 @@ const Header = () => {
         <div className='border-b border-gray-700/70 text-gray-100/90 bg-black w-full fixed top-0 left-0 z-50'>
             <div className='w-[80%] mx-auto h-24 flex items-center justify-between'>
                 <div className='font-medium text-4xl'>C.J.C</div>
-                <ul className='lg:flex hidden gap-10 text-base'>
+                <div className='flex gap-20 items-center'>
+                    <ul className='lg:flex hidden gap-10 text-base'>
                     {lists.map(list => (
                         <li key={list.id} className='cursor-pointer'>
                             <Link href={`${list.path}`}>{list.name}</Link>
                         </li>
                     ))}
                 </ul>
+                <Link target='_blank' href="https://github.com/chris097">
+                    <Image className='w-7 h-7 rounded-full' src={github} alt='github' />
+                    </Link>
+                </div>
                 <div className='lg:hidden block'>
                     <FiMenu size={20} onClick={() => setOpen(!open)} color='white' />
                     {open && <div className='fixed flex top-0 left-0 inset-0 bg-black/90 overflow-hidden flex-col z-50'>

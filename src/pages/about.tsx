@@ -9,6 +9,7 @@ import Yabacon from '@/assets/svg/Yabacon';
 import Yep from '@/assets/svg/Yep';
 import Esoft from '@/assets/svg/Esl';
 import Esca from '@/assets/svg/Esca';
+import taxtech from '@/assets/images/taxtech.png';
 
 const About = () => {
   return (
@@ -28,21 +29,22 @@ const About = () => {
             <div className='font-font-clash'>
               <h1 className='text-2xl'>Hello,</h1>
             <p className='xl:text-6xl lg:text-5xl text-4xl mt-4 font-medium'>My Journey in Tech Community</p>
-            <p className='lg:text-2xl text-lg mt-10 leading-normal'>Throughout the course of my career, I have perfected my Javascript, HTML5, CSS3, ReactJS, Typescript, NodeJS and TailwindCSS abilities. I am a capable and consistent problem-solver skilled at prioritising and managing projects with proficiency. In my previous role, I contributed problem-solving, teamwork, and Agile development toward team efforts and business improvements. I am progressive minded and in tune with new developments in my field. I have proven to be effective and collaborative with strong leadership talents. I enjoy collective brainstorming sessions which all me to coordinate activities to achieve a common goal.</p>
+            <p className='lg:text-2xl text-lg mt-10 leading-normal'>With over three years of experience as a software developer, I’ve honed my skills in JavaScript, HTML5, CSS3, ReactJS, TypeScript, NodeJS, NextJS, React-Native and TailwindCSS. I&apos;m a proficient problem-solver, adept at prioritizing and managing projects with a high level of expertise. In my previous roles, I have effectively contributed to team efforts and business improvements through problem-solving, teamwork, and Agile development methodologies.</p>
             {/* <Image className='w-full h-[600px] object-fill bg-no-repeat' src={me} alt="personal" /> */}
-            <p className='lg:text-2xl mt-5 leading-normal text-lg'>I'm Christian Chiemela a frontend developer with almost 3years of experience in building simple and complex application for companies and individuals, a Nigerian based in Lagos.</p>
+            <p className='lg:text-2xl mt-5 leading-normal text-lg'>I am forward-thinking and stay attuned to the latest advancements in my field, with a strong track record of leadership and collaboration. I thrive in collective brainstorming sessions, where I coordinate activities to achieve shared goals.</p>
           </div>
           <h3 className='xl:text-6xl lg:text-5xl text-2xl mt-16 font-medium font-font-clash'>Highlights Experiences</h3>
           <Experience
-            logo={<Yabacon />}
-            name='Yabacon'
-            startDate='SINCE MAY 2023'
+            logo={<Image className='mt-7 w-80 h-12' width={400} height={400} src={taxtech} alt='taxtech' />}
+            name='Taxtech'
+            startDate='SINCE JAN 2024'
             endDate='PRESENT'
-            position='Lead Frontend Developer'
+            position='Lead Mobile and Frontend Developer'
             description={`
-              Gained strong leadership skills by managing projects from start to finish.
-              Managed time efficiently in order to complete all tasks within deadlines.
-              Skilled at working independently and collaboratively in a team environment.
+              Collaborate with a team of developers, product managers, and designers to build the OredoPay web and mobile applications, a comprehensive taxpayer platform for Oredo Local Government in Nigeria.
+•Contribute to strategic planning and decision-making processes, leveraging technical expertise and industry insights to drive product innovation and business growth.
+•Conduct code reviews, testing, and debugging to maintain high-quality code standards and optimize application performance.
+•Contribute to ongoing development and refinement of OredoPay, incorporating user feedback and industry best practices to drive innovation and excellence in the product offering.
             `}
           />
           <Experience
@@ -52,9 +54,9 @@ const About = () => {
             endDate='APRIL 2023'
             position='Mid Frontend Developer'
             description={`
-              Work closely with designers and project managers to implement the best UX possible.
-              Actively participate in all processes of Agile development.
-              Write clean and maintainable code by using best practices.
+              Collaborated with Yep! team to develop apayment wallet solution for businesses, incorporating user-friendlyinterfaces and seamless payment functionalities.
+Defined project goals, timelines, and deliverables, ensuring alignment with business objectives and client requirements. Developed and implemented fronted architecture and coding standards, promoting best practices and maintaining code quality and consistency across the application.
+•Contributed to strategic planning and decision-making processes, leveraging technical expertise and industry insights to drive product innovation and business growth
             `}
           />
           <Experience
@@ -64,8 +66,12 @@ const About = () => {
             endDate='MARCH 2022'
             position='Junior Frontend Developer'
             description={`
-              Work in Agile development to meet deadlines.
-              Build complex UI components in Agile Development.
+            Spearheaded the development of a comprehensive church application from inception to deployment, incorporating features such a s event calendars,s e r m o n archives, and online donations.
+olmolemented user-friendly interfaces using modern front-end technologies such as Reactis and tailored the application to
+              Spearheaded the development of a comprehensive church application from inception to deployment, incorporating features such a s event calendars, sermon archives, and online donations.
+•Implemented user-friendly interfaces using modern front-end technologies such as React.js and tailored the application to provide seamless experiences across devices.
+•Conducted thorough testing and debugging throughout the development lifecycle to identify and address issues promptly, ensuring a reliable and high-performance application.
+•Collaborated closely with stakeholders, including church leadership and members, to gather requirements and ensure alignment with the organization's mission and goals.
             `}
           />
           <Experience

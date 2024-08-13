@@ -40,18 +40,15 @@ export default function Home() {
               </div>
               <h2 className='lg:text-5xl text-3xl font-bold font-font-clash' >Christian Junior Chiemela</h2>
               <p className='md:text-xl text-base text-gray-200/70 mt-5 font-font-clash'>
-                Experienced Software Engineer committed to developing world-class applications and maintaining
-                cutting edge technical skills with up-to-date industry knowledge. An application developer with excellent
-                project leadership, requirement gathering, and analysis, architectural, component, interface design and
-                development for web and mobile-based applications with a strong background in object-oriented
-                programming and obsessed about quality
+                Passionate Software Engineer with a dedication to crafting world-class applications. I bring a blend of deep technical expertise and a commitment to continuous learning, ensuring I stay ahead in an ever-evolving industry. My experience spans full-cycle development, from thorough requirement analysis and architectural design to robust implementation for web and mobile platforms. With a strong foundation in object-oriented programming, I lead projects with precision and a focus on quality, always building with empathy to create solutions that resonate with users.
               </p>
               <div className='mt-6 gap-6 flex'>
                 {/* <div className='text-2xl'>Resume</div> */}
                 <a href="mailto:chrisfidel.international@gmail.com">
                   <button className='bg-white z-40 w-32 h-12 mt-2 text-gray-600 hover:opacity-75'>Hire Me</button>
                 </a>
-                <a rel='noopener noreferrer' target='_blank' href="https://drive.google.com/file/d/1A2vBUewA5r7njRr2xMwT4ehMJB_UEFqJ/view?usp=sharing" download="christian-cv">
+                <a rel='noopener noreferrer' target='_blank' href="https://drive.google.com/file/d/1394bceDLidNPwonzEGf7mc2Cqd8XeYK9/view?usp=sharing"
+                  download="christian-cv">
                   <button className='border text-white z-40 w-32 h-12 mt-2 bg-black hover:opacity-75'>Download CV</button>
                 </a>
               </div>
