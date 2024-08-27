@@ -14,7 +14,7 @@ import taxtech from '@/assets/images/taxtech.png';
 const About = () => {
   return (
     <>
-       <Head>
+      <Head>
         <title>Christian Chiemela | About page</title>
         <meta name="description" content="Christian Chiemela about page" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -26,10 +26,12 @@ const About = () => {
         <Header />
         <span className="absolute bg-gray-500 -left-28 -top-28 rounded-full opacity-[20%] blur-3xl aspect-square h-[350px] -z-10 animate-pulse" />
         <div className='relative py-36 w-[80%] mx-auto'>
-            <div className='font-font-clash'>
-              <h1 className='text-2xl'>Hello,</h1>
+          <div className='font-font-clash'>
+            <h1 className='text-2xl'>Hello,</h1>
             <p className='xl:text-6xl lg:text-5xl text-4xl mt-4 font-medium'>My Journey in Tech Community</p>
-            <p className='lg:text-2xl text-lg mt-10 leading-normal'>With over three years of experience as a software developer, I’ve honed my skills in JavaScript, HTML5, CSS3, ReactJS, TypeScript, NodeJS, NextJS, React-Native and TailwindCSS. I&apos;m a proficient problem-solver, adept at prioritizing and managing projects with a high level of expertise. In my previous roles, I have effectively contributed to team efforts and business improvements through problem-solving, teamwork, and Agile development methodologies.</p>
+            <p className='lg:text-2xl text-lg mt-10 leading-normal'>With extensive experience as a software developer, I’ve honed my skills in JavaScript, HTML5, CSS3, ReactJS, TypeScript, NodeJS, NextJS, Goland, React Native, and TailwindCSS. I excel in problem-solving, project management, and driving initiatives with a high level of expertise. In my previous roles, I have significantly contributed to team success and business growth through effective problem-solving, teamwork, and Agile methodologies.
+
+              I stay attuned to the latest industry advancements, with a strong track record of leadership and collaboration. I thrive in collaborative environments, where I lead and coordinate efforts to achieve shared goals.</p>
             {/* <Image className='w-full h-[600px] object-fill bg-no-repeat' src={me} alt="personal" /> */}
             <p className='lg:text-2xl mt-5 leading-normal text-lg'>I am forward-thinking and stay attuned to the latest advancements in my field, with a strong track record of leadership and collaboration. I thrive in collective brainstorming sessions, where I coordinate activities to achieve shared goals.</p>
           </div>
@@ -85,7 +87,7 @@ olmolemented user-friendly interfaces using modern front-end technologies such a
               Wrote clean and maintainable code by using best practices.
             `}
           />
-          </div>
+        </div>
         <Footer />
       </main>
     </>

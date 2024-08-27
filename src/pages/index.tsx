@@ -47,7 +47,7 @@ export default function Home() {
                 <a href="mailto:chrisfidel.international@gmail.com">
                   <button className='bg-white z-40 w-32 h-12 mt-2 text-gray-600 hover:opacity-75'>Hire Me</button>
                 </a>
-                <a rel='noopener noreferrer' target='_blank' href="https://drive.google.com/file/d/1394bceDLidNPwonzEGf7mc2Cqd8XeYK9/view?usp=sharing"
+                <a rel='noopener noreferrer' target='_blank' href="https://drive.google.com/file/d/1RWo4FZuUDPwDvv5FFzQb1oL68w3fAf2v/view?usp=sharing"
                   download="christian-cv">
                   <button className='border text-white z-40 w-32 h-12 mt-2 bg-black hover:opacity-75'>Download CV</button>
                 </a>
@@ -96,7 +96,7 @@ export default function Home() {
           <BackgroundSvg />
           <div className='w-[80%] mx-auto z-40 relative'>
             <h2 className='text-5xl mt-4 font-medium font-font-clash'>Projects</h2>
-            
+
             <ProjectCard project={projects.slice(0, 3)} />
             <div className='flex justify-end cursor-pointer relative hover:opacity-80 mt-4'>
               <Link href="/portfolio"><span className='border-b hover:opacity-60 text-xs'>View Mores</span></Link>
